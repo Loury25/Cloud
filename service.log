@@ -1,0 +1,10 @@
+cd /sdcard/MacroDroid/cloud
+git init
+git config --global --add safe.directory /storage/emulated/0/MacroDroid/cloud
+git add .
+git config --global user.email "rohmankholilur25@gmail.com"
+git config --global user.name "Loury25"
+git commit -m "camera"
+git push origin master
+Loury25
+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
