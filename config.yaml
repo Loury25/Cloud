@@ -39,18 +39,18 @@ experimental:
 proxies:
   - {name: harun Akrab 🇮🇩, server: 104.17.3.81, port: 80, type: vmess, uuid: 6a972287-7574-48ad-aca0-3c918f4258b8, sni: idn.evouch77.me, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: idn.evouch77.me}}}
   - {name: harun RG 🇮🇩, server: 104.18.3.2, port: 80, type: vmess, uuid: 6a972287-7574-48ad-aca0-3c918f4258b8, sni: idn.evouch77.me, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: idn.evouch77.me}}}
-  - {name: fafa Akrab 🇮🇩, server: 104.17.3.81, port: 80, type: vmess, uuid: cd522dac-f201-47fd-ab63-995335af76cc, sni: idn.evouch77.me, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: idn.evouch77.me}}}
-  - {name: fafa RG 🇮🇩, server: 104.18.3.2, port: 80, type: vmess, uuid: cd522dac-f201-47fd-ab63-995335af76cc, sni: idn.evouch77.me, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: idn.evouch77.me}}}
+  - {name: ulya Akrab 🇮🇩, server: 104.17.3.81, port: 80, type: vmess, uuid: 25f9683c-b880-4f33-b0a0-8790e85f2fef, sni: idn.evouch77.me, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: idn.evouch77.me}}}
+  - {name: ulya RG 🇮🇩, server: 104.18.3.2, port: 80, type: vmess, uuid: 25f9683c-b880-4f33-b0a0-8790e85f2fef, sni: idn.evouch77.me, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: idn.evouch77.me}}}
   - {name: rohman Akrab, server: 104.17.3.81, port: 2096, type: trojan, password: rohman, skip-cert-verify: true, udp: true, sni: id.evouch.tech, network: ws, ws-opts: {path: /trojango, headers: {Host: id.evouch.tech}}}
-  -  {name: rohman RG, server: 104.18.3.2, port: 2096, type: trojan, password: rohman, skip-cert-verify: true, udp: true, sni: id.evouch.tech, network: ws, ws-opts: {path: /trojango, headers: {Host: id.evouch.tech}}}
+  - {name: rohman RG, server: 104.18.3.2, port: 2096, type: trojan, password: rohman, skip-cert-verify: true, udp: true, sni: id.evouch.tech, network: ws, ws-opts: {path: /trojango, headers: {Host: id.evouch.tech}}}
 proxy-groups:
   - name: Rule
     type: select
     proxies:
       - harun Akrab 🇮🇩
       - harun RG 🇮🇩
-      - fafa Akrab 🇮🇩
-      - fafa RG 🇮🇩
+      - ulya Akrab 🇮🇩
+      - ulya RG 🇮🇩
       - rohman Akrab
       - rohman RG
 rules:
