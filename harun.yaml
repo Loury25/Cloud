@@ -37,13 +37,13 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: Akrab 🇮🇩, server: 104.17.3.81, port: 80, type: vmess, uuid: 6a972287-7574-48ad-aca0-3c918f4258b8, sni: idn.evouch77.me, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: idn.evouch77.me}}}
-  - {name: RG, server: 104.17.3.81, port: 80, type: vmess, uuid: 6a972287-7574-48ad-aca0-3c918f4258b8, sni: idn.evouch77.me, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: idn.evouch77.me}}}
+  - {name: harun Akrab 🇮🇩, server: 104.17.3.81, port: 80, type: vmess, uuid: 6a972287-7574-48ad-aca0-3c918f4258b8, sni: idn.evouch77.me, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: idn.evouch77.me}}}
+  - {name: harun RG, server: 104.17.3.81, port: 80, type: vmess, uuid: 6a972287-7574-48ad-aca0-3c918f4258b8, sni: idn.evouch77.me, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: idn.evouch77.me}}}
 proxy-groups:
   - name: Rule
     type: select
     proxies:
-      - Akrab 🇮🇩
-      - RG
+      - harun Akrab 🇮🇩
+      - harun RG
 rules:
  - MATCH,Rule
