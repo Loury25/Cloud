@@ -37,13 +37,13 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: rohman Akrab, server: 104.17.3.81, port: 2096, type: trojan, password: rohman, skip-cert-verify: true, udp: true, sni: id.evouch.tech, network: ws, ws-opts: {path: /trojango, headers: {Host: id.evouch.tech}}}
-  - {name: rohman RG, server: 104.18.3.2, port: 2096, type: trojan, password: rohman, skip-cert-verify: true, udp: true, sni: id.evouch.tech, network: ws, ws-opts: {path: /trojango, headers: {Host: id.evouch.tech}}}
+  - {name: Akrab, server: 104.17.3.81, port: 2096, type: trojan, password: rohman, skip-cert-verify: true, udp: true, sni: id.evouch.tech, network: ws, ws-opts: {path: /trojango, headers: {Host: id.evouch.tech}}}
+  - {name: RG, server: 104.18.3.2, port: 2096, type: trojan, password: rohman, skip-cert-verify: true, udp: true, sni: id.evouch.tech, network: ws, ws-opts: {path: /trojango, headers: {Host: id.evouch.tech}}}
 proxy-groups:
   - name: Rule
     type: select
     proxies:
-      - rohman Akrab
-      - rohman RG
+      - Akrab
+      - RG
 rules:
  - MATCH,Rule
