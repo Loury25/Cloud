@@ -38,7 +38,7 @@ experimental:
 
 proxies:
   - {name: Akrab, server: 104.17.3.81, port: 80, type: vmess, uuid: 25f9683c-b880-4f33-b0a0-8790e85f2fef, sni: idn.evouch77.me, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: idn.evouch77.me}}}
-  - {name: rohman RG, server: 104.18.3.2, port: 80, type: vmess, uuid: 25f9683c-b880-4f33-b0a0-8790e85f2fef, sni: idn.evouch77.me, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: idn.evouch77.me}}}
+  - {name: RG, server: 104.18.3.2, port: 80, type: vmess, uuid: 25f9683c-b880-4f33-b0a0-8790e85f2fef, sni: idn.evouch77.me, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: idn.evouch77.me}}}
 proxy-groups:
   - name: Rule
     type: select
