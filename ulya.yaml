@@ -37,8 +37,8 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: Akrab, server: 104.17.3.81, port: 80, type: vmess, uuid: 25f9683c-b880-4f33-b0a0-8790e85f2fef, sni: idn.evouch77.me, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: idn.evouch77.me}}}
-  - {name: RG, server: 104.18.3.2, port: 80, type: vmess, uuid: 25f9683c-b880-4f33-b0a0-8790e85f2fef, sni: idn.evouch77.me, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: idn.evouch77.me}}}
+  - {name: Akrab, server: 104.17.3.81, port: 80, type: vmess, uuid: 115680ea-41f2-481b-8200-93a9bcc2a373, sni: z4.evouch.tech, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: z4.evouch.tech}}}
+  - {name: RG, server: 104.18.3.2, port: 80, type: vmess, uuid: 115680ea-41f2-481b-8200-93a9bcc2a373, sni: z4.evouch.tech, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: z4.evouch.tech}}}
 proxy-groups:
   - name: Rule
     type: select
