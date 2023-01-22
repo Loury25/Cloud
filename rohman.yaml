@@ -37,13 +37,17 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: Akrab, server: 104.17.3.81, port: 2096, type: trojan, password: rohman, skip-cert-verify: true, udp: true, sni: id.evouch.tech, network: ws, ws-opts: {path: /trojango, headers: {Host: id.evouch.tech}}}
-  - {name: RG, server: 104.18.3.2, port: 2096, type: trojan, password: rohman, skip-cert-verify: true, udp: true, sni: id.evouch.tech, network: ws, ws-opts: {path: /trojango, headers: {Host: id.evouch.tech}}}
+  - {name: rohman Akrab, server: 104.17.3.81, port: 80, type: vmess, uuid: cd16660b-5350-4f3a-acaf-081ac57105ad, sni: z4.evouch.tech, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: z4.evouch.tech}}}
+  - {name: TLS rohman Akrab, server: 104.17.3.81, port: 443, type: vmess, uuid: cd16660b-5350-4f3a-acaf-081ac57105ad, sni: z4.evouch.tech, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: z4.evouch.tech}}}
+  - {name: rohman RG, server: 104.18.3.2, port: 80, type: vmess, uuid: cd16660b-5350-4f3a-acaf-081ac57105ad, sni: z4.evouch.tech, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: z4.evouch.tech}}}
+  - {name: TLS rohman RG, server: 104.18.3.2, port: 443, type: vmess, uuid: cd16660b-5350-4f3a-acaf-081ac57105ad, sni: z4.evouch.tech, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: z4.evouch.tech}}}
 proxy-groups:
   - name: Rule
     type: select
     proxies:
-      - Akrab
-      - RG
+      - rohman Akrab
+      - TLS rohman Akrab
+      - rohman RG
+      - TLS rohman RG
 rules:
  - MATCH,Rule
