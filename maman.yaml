@@ -1,0 +1,49 @@
+
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+mode: rule
+log-level: silent
+allow-lan: true
+external-controller: 0.0.0.0:9090
+bind-address: "*"
+ipv6: false
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: redir-host
+  listen: 0.0.0.0:7894
+  fallback-filter:
+    geoip: false
+    ipcidr:
+    - 240.0.0.0/4
+  nameserver:
+    - https://puredns.org/dns-query
+    - tls://puredns.org:853
+  fallback:
+    - tcp://108.137.44.39
+    - tcp://108.137.44.9
+    - 108.137.44.39
+    - 108.137.44.9
+tun:
+  enable: true
+  stack: system 
+  macOS-auto-route: true
+  macOS-auto-detect-interface: true
+  dns-hijack:
+    - tcp://108.137.44.39:53
+experimental:
+  interface-name: en0
+
+proxies:
+  - {name: maman Akrab, server: 104.17.3.81, port: 2096, type: trojan, password: maman, skip-cert-verify: true, sni: z1.evouch.tech, udp: true, network: ws, ws-opts: {path: /trojango, headers: {Host: z1.evouch.tech}}}
+  - {name: maman RG, server: 104.18.3.2, port: 2096, type: trojan, password: maman, skip-cert-verify: true, sni: z1.evouch.tech, udp: true, network: ws, ws-opts: {path: /trojango, headers: {Host: z1.evouch.tech}}}
+proxy-groups:
+  - name: Rule
+    type: select
+    proxies:
+      - maman Akrab
+      - maman RG
+rules:
+ - MATCH,Rule
