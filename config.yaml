@@ -37,10 +37,14 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: harun Akrab, server: 104.17.3.81, port: 80, type: vmess, uuid: 6a972287-7574-48ad-aca0-3c918f4258b8, sni: idn.evouch77.me, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: idn.evouch77.me}}}
-  - {name: TLS harun Akrab, server: 104.17.3.81, port: 443, type: vmess, uuid: 6a972287-7574-48ad-aca0-3c918f4258b8, sni: idn.evouch77.me, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: idn.evouch77.me}}}
-  - {name: harun RG, server: 104.18.3.2, port: 80, type: vmess, uuid: 6a972287-7574-48ad-aca0-3c918f4258b8, sni: idn.evouch77.me, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: idn.evouch77.me}}}
-  - {name: TLS harun RG, server: 104.18.3.2, port: 443, type: vmess, uuid: 6a972287-7574-48ad-aca0-3c918f4258b8, sni: idn.evouch77.me, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: idn.evouch77.me}}}
+  - {name: abid Akrab, server: 104.17.3.81, port: 80, type: vmess, uuid: fbee2f4b-ba83-4fe4-9575-c85f3eb6ee92, sni: idn.evouch77.me, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: idn.evouch77.me}}}
+  - {name: TLS abid Akrab, server: 104.17.3.81, port: 443, type: vmess, uuid: fbee2f4b-ba83-4fe4-9575-c85f3eb6ee92, sni: idn.evouch77.me, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: idn.evouch77.me}}}
+  - {name: abid RG, server: 104.18.3.2, port: 80, type: vmess, uuid: fbee2f4b-ba83-4fe4-9575-c85f3eb6ee92, sni: idn.evouch77.me, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: idn.evouch77.me}}}
+  - {name: TLS abid RG, server: 104.18.3.2, port: 443, type: vmess, uuid: fbee2f4b-ba83-4fe4-9575-c85f3eb6ee92, sni: idn.evouch77.me, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: idn.evouch77.me}}}
+  - {name: herza Akrab, server: 104.17.3.81, port: 80, type: vmess, uuid: 5989251b-a5a5-42f8-bae4-d3496508a2de, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
+  - {name: TLS herza Akrab, server: 104.17.3.81, port: 443, type: vmess, uuid: 5989251b-a5a5-42f8-bae4-d3496508a2de, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
+  - {name: herza RG, server: 104.18.3.2, port: 80, type: vmess, uuid: 5989251b-a5a5-42f8-bae4-d3496508a2de, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
+  - {name: TLS herza RG, server: 104.18.3.2, port: 443, type: vmess, uuid: 5989251b-a5a5-42f8-bae4-d3496508a2de, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
   - {name: rohman Akrab, server: 104.17.3.81, port: 80, type: vmess, uuid: cd16660b-5350-4f3a-acaf-081ac57105ad, sni: z4.evouch.tech, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: z4.evouch.tech}}}
   - {name: TLS rohman Akrab, server: 104.17.3.81, port: 443, type: vmess, uuid: cd16660b-5350-4f3a-acaf-081ac57105ad, sni: z4.evouch.tech, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: z4.evouch.tech}}}
   - {name: rohman RG, server: 104.18.3.2, port: 80, type: vmess, uuid: cd16660b-5350-4f3a-acaf-081ac57105ad, sni: z4.evouch.tech, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: z4.evouch.tech}}}
@@ -55,10 +59,14 @@ proxy-groups:
   - name: Rule
     type: select
     proxies:
-      - harun Akrab
-      - TLS harun Akrab
-      - harun RG
-      - TLS harun RG
+      - abid Akrab
+      - TLS abid Akrab
+      - abid RG
+      - TLS abid RG
+      - herza Akrab
+      - TLS herza Akrab
+      - herza RG
+      - TLS herza RG
       - rohman Akrab
       - TLS rohman Akrab
       - rohman RG
