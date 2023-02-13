@@ -37,13 +37,17 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: maman Akrab, server: 104.17.3.81, port: 2096, type: trojan, password: maman, skip-cert-verify: true, sni: z1.evouch.tech, udp: true, network: ws, ws-opts: {path: /trojango, headers: {Host: z1.evouch.tech}}}
-  - {name: maman RG, server: 104.18.3.2, port: 2096, type: trojan, password: maman, skip-cert-verify: true, sni: z1.evouch.tech, udp: true, network: ws, ws-opts: {path: /trojango, headers: {Host: z1.evouch.tech}}}
+  - {name: maman Akrab, server: 104.17.3.81, port: 80, type: vmess, uuid: 5989251b-a5a5-42f8-bae4-d3496508a2de, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
+  - {name: TLS maman Akrab, server: 104.17.3.81, port: 443, type: vmess, uuid: 5989251b-a5a5-42f8-bae4-d3496508a2de, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
+  - {name: maman RG, server: 104.18.3.2, port: 80, type: vmess, uuid: 5989251b-a5a5-42f8-bae4-d3496508a2de, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
+  - {name: TLS maman RG, server: 104.18.3.2, port: 443, type: vmess, uuid: 5989251b-a5a5-42f8-bae4-d3496508a2de, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
 proxy-groups:
   - name: Rule
     type: select
     proxies:
       - maman Akrab
+      - TLS maman Akrab
       - maman RG
+      - TLS maman RG
 rules:
  - MATCH,Rule
