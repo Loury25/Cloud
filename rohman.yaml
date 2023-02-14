@@ -1,4 +1,3 @@
- 
 port: 7890
 socks-port: 7891
 redir-port: 7892
@@ -37,10 +36,10 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: rohman Akrab, server: 104.17.3.81, port: 80, type: vmess, uuid: cd16660b-5350-4f3a-acaf-081ac57105ad, sni: z4.evouch.tech, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: z4.evouch.tech}}}
-  - {name: TLS rohman Akrab, server: 104.17.3.81, port: 443, type: vmess, uuid: cd16660b-5350-4f3a-acaf-081ac57105ad, sni: z4.evouch.tech, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: z4.evouch.tech}}}
-  - {name: rohman RG, server: 104.18.3.2, port: 80, type: vmess, uuid: cd16660b-5350-4f3a-acaf-081ac57105ad, sni: z4.evouch.tech, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: z4.evouch.tech}}}
-  - {name: TLS rohman RG, server: 104.18.3.2, port: 443, type: vmess, uuid: cd16660b-5350-4f3a-acaf-081ac57105ad, sni: z4.evouch.tech, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: z4.evouch.tech}}}
+  - {name: rohman Akrab, server: 104.17.3.81, port: 80, type: vmess, uuid: 5989251b-a5a5-42f8-bae4-d3496508a2de, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
+  - {name: TLS rohman Akrab, server: 104.17.3.81, port: 443, type: vmess, uuid: 5989251b-a5a5-42f8-bae4-d3496508a2de, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
+  - {name: rohman RG, server: 104.18.3.2, port: 80, type: vmess, uuid: 5989251b-a5a5-42f8-bae4-d3496508a2de, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
+  - {name: TLS rohman RG, server: 104.18.3.2, port: 443, type: vmess, uuid: 5989251b-a5a5-42f8-bae4-d3496508a2de, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
 proxy-groups:
   - name: Rule
     type: select
