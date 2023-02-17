@@ -40,6 +40,8 @@ proxies:
   - {name: TLS rohman Akrab, server: 104.17.3.81, port: 443, type: vmess, uuid: 2f2d5172-d3fa-41ee-a88a-aa1b79f40f8b, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
   - {name: rohman RG, server: 104.18.3.2, port: 80, type: vmess, uuid: 2f2d5172-d3fa-41ee-a88a-aa1b79f40f8b, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
   - {name: TLS rohman RG, server: 104.18.3.2, port: 443, type: vmess, uuid: 2f2d5172-d3fa-41ee-a88a-aa1b79f40f8b, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
+  - {name: rohman Udemy, server: my.udemy.com, port: 80, type: vmess, uuid: 2f2d5172-d3fa-41ee-a88a-aa1b79f40f8b, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
+  - {name: TLS rohman Udemy, server: my.udemy.com, port: 443, type: vmess, uuid: 2f2d5172-d3fa-41ee-a88a-aa1b79f40f8b, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
 proxy-groups:
   - name: Rule
     type: select
@@ -48,5 +50,7 @@ proxy-groups:
       - TLS rohman Akrab
       - rohman RG
       - TLS rohman RG
+      - rohman Udemy
+      - TLS rohman Udemy
 rules:
  - MATCH,Rule
