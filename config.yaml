@@ -49,10 +49,10 @@ proxies:
   - {name: TLS rohman Akrab, server: 104.17.3.81, port: 443, type: vmess, uuid: cd16660b-5350-4f3a-acaf-081ac57105ad, sni: z4.evouch.tech, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: z4.evouch.tech}}}
   - {name: rohman RG, server: 104.18.3.2, port: 80, type: vmess, uuid: cd16660b-5350-4f3a-acaf-081ac57105ad, sni: z4.evouch.tech, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: z4.evouch.tech}}}
   - {name: TLS rohman RG, server: 104.18.3.2, port: 443, type: vmess, uuid: cd16660b-5350-4f3a-acaf-081ac57105ad, sni: z4.evouch.tech, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: z4.evouch.tech}}}
-  - {name: ulya Akrab, server: 104.17.3.81, port: 80, type: vmess, uuid: 115680ea-41f2-481b-8200-93a9bcc2a373, sni: z4.evouch.tech, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: z4.evouch.tech}}}
-  - {name: TLS ulya Akrab, server: 104.17.3.81, port: 443, type: vmess, uuid: 115680ea-41f2-481b-8200-93a9bcc2a373, sni: z4.evouch.tech, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: z4.evouch.tech}}}
-  - {name: ulya RG, server: 104.18.3.2, port: 80, type: vmess, uuid: 115680ea-41f2-481b-8200-93a9bcc2a373, sni: z4.evouch.tech, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: z4.evouch.tech}}}
-  - {name: TLS ulya RG, server: 104.18.3.2, port: 443, type: vmess, uuid: 115680ea-41f2-481b-8200-93a9bcc2a373, sni: z4.evouch.tech, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: z4.evouch.tech}}}
+  - {name: fafa Akrab, server: 104.17.3.81, port: 80, type: vmess, uuid: 8d086dbd-f8f4-466f-b430-d0a4fd1414a3, sni: sg-aws1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: sg-aws1.rajs-vpn.xyz}}}
+  - {name: TLS fafa Akrab, server: 104.17.3.81, port: 443, type: vmess, uuid: 8d086dbd-f8f4-466f-b430-d0a4fd1414a3, sni: sg-aws1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: sg-aws1.rajs-vpn.xyz}}}
+  - {name: fafa RG, server: 104.18.3.2, port: 80, type: vmess, uuid: 8d086dbd-f8f4-466f-b430-d0a4fd1414a3, sni: sg-aws1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: sg-aws1.rajs-vpn.xyz}}}
+  - {name: TLS fafa RG, server: 104.18.3.2, port: 443, type: vmess, uuid: 8d086dbd-f8f4-466f-b430-d0a4fd1414a3, sni: sg-aws1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: sg-aws1.rajs-vpn.xyz}}}
   - {name: maman Akrab, server: 104.17.3.81, port: 2096, type: trojan, password: maman, skip-cert-verify: true, sni: z1.evouch.tech, udp: true, network: ws, ws-opts: {path: /trojango, headers: {Host: z1.evouch.tech}}}
   - {name: maman RG, server: 104.18.3.2, port: 2096, type: trojan, password: maman, skip-cert-verify: true, sni: z1.evouch.tech, udp: true, network: ws, ws-opts: {path: /trojango, headers: {Host: z1.evouch.tech}}}
 proxy-groups:
@@ -71,10 +71,10 @@ proxy-groups:
       - TLS rohman Akrab
       - rohman RG
       - TLS rohman RG
-      - ulya Akrab
-      - TLS ulya Akrab
-      - ulya RG
-      - TLS ulya RG
+      - fafa Akrab
+      - TLS fafa Akrab
+      - fafa RG
+      - TLS fafa RG
       - maman Akrab
       - maman RG
 rules:
