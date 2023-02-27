@@ -36,21 +36,21 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: rohman Akrab, server: 104.17.3.81, port: 80, type: vmess, uuid: 2f2d5172-d3fa-41ee-a88a-aa1b79f40f8b, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
-  - {name: TLS rohman Akrab, server: 104.17.3.81, port: 443, type: vmess, uuid: 2f2d5172-d3fa-41ee-a88a-aa1b79f40f8b, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
-  - {name: rohman RG, server: 104.18.3.2, port: 80, type: vmess, uuid: 2f2d5172-d3fa-41ee-a88a-aa1b79f40f8b, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
-  - {name: TLS rohman RG, server: 104.18.3.2, port: 443, type: vmess, uuid: 2f2d5172-d3fa-41ee-a88a-aa1b79f40f8b, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
-  - {name: rohman Udemy, server: my.udemy.com, port: 80, type: vmess, uuid: 2f2d5172-d3fa-41ee-a88a-aa1b79f40f8b, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
-  - {name: TLS rohman Udemy, server: my.udemy.com, port: 443, type: vmess, uuid: 2f2d5172-d3fa-41ee-a88a-aa1b79f40f8b, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
+  - {name: jack Flex1, server: 162.159.138.6, port: 80, type: vmess, uuid: 5989251b-a5a5-42f8-bae4-d3496508a2de, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
+  - {name: TLS jack Flex1, server: 162.159.138.6, port: 443, type: vmess, uuid: 5989251b-a5a5-42f8-bae4-d3496508a2de, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
+  - {name: jack Flex2, server: sogood.linefriends.com, port: 80, type: vmess, uuid: 5989251b-a5a5-42f8-bae4-d3496508a2de, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
+  - {name: TLS jack Flex2, server: sogood.linefriends.com, port: 443, type: vmess, uuid: 5989251b-a5a5-42f8-bae4-d3496508a2de, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
+  - {name: jack Flex3, server: static.line-scdn.net, port: 80, type: vmess, uuid: 0328c140-93f5-45aa-fc29-b863aa4a7e4a, sni: d1308qnj72qva0.cloudfront.net, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmws?ed=2048, headers: {Host: d1308qnj72qva0.cloudfront.net}}}
+  - {name: TLS jack Flex3, server: static.line-scdn.net, port: 443, type: vmess, uuid: 0328c140-93f5-45aa-fc29-b863aa4a7e4a, sni: d1308qnj72qva0.cloudfront.net, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmws?ed=2048, headers: {Host: d1308qnj72qva0.cloudfront.net}}}
 proxy-groups:
   - name: Rule
     type: select
     proxies:
-      - rohman Akrab
-      - TLS rohman Akrab
-      - rohman RG
-      - TLS rohman RG
-      - rohman Udemy
-      - TLS rohman Udemy
+      - jack Flex1
+      - TLS jack Flex1
+      - jack Flex2
+      - TLS jack Flex2
+      - jack Flex3
+      - TLS jack Flex3
 rules:
  - MATCH,Rule
