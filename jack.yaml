@@ -50,5 +50,7 @@ proxy-groups:
       - TLS jack Akrab
       - jack Flex
       - TLS jack Flex
+      - jack Flex2
+      - TLS jack Flex2
 rules:
  - MATCH,Rule
