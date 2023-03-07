@@ -1,0 +1,146 @@
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+mode: rule
+log-level: silent
+allow-lan: true
+external-controller: 0.0.0.0:9090
+bind-address: "*"
+ipv6: false
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: redir-host
+  listen: 0.0.0.0:7894
+  fallback-filter:
+    geoip: false
+    ipcidr:
+    - 240.0.0.0/4
+  nameserver:
+    - https://puredns.org/dns-query
+    - tls://puredns.org:853
+  fallback:
+    - tcp://108.137.44.39
+    - tcp://108.137.44.9
+    - 108.137.44.39
+    - 108.137.44.9
+tun:
+  enable: true
+  stack: system 
+  macOS-auto-route: true
+  macOS-auto-detect-interface: true
+  dns-hizul:
+    - tcp://108.137.44.39:53
+experimental:
+  interface-name: en0
+
+proxies:
+  - name: zul Flex1
+    server: 162.159.138.6
+    port: 80
+    type: vmess
+    uuid: fbee2f4b-ba83-4fe4-9575-c85f3eb6ee92
+    sni: idn.evouch77.me
+    alterId: 0
+    cipher: auto
+    tls: 0
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: /v2ray
+      headers:
+        Host: idn.evouch77.me
+  - name: TLS zul Flex1
+    server: 162.159.138.6
+    port: 443
+    type: vmess
+    uuid: fbee2f4b-ba83-4fe4-9575-c85f3eb6ee92
+    sni: idn.evouch77.me
+    alterId: 0
+    cipher: auto
+    tls: 1
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: /v2ray
+      headers:
+        Host: idn.evouch77.me
+  - name: zul Flex2
+    server: sogood.linefriends.com
+    port: 80
+    type: vmess
+    uuid: fbee2f4b-ba83-4fe4-9575-c85f3eb6ee92
+    sni: idn.evouch77.me
+    alterId: 0
+    cipher: auto
+    tls: 0
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: /v2ray
+      headers:
+        Host: idn.evouch77.me
+  - name: TLS zul Flex2
+    server: sogood.linefriends.com
+    port: 443
+    type: vmess
+    uuid: fbee2f4b-ba83-4fe4-9575-c85f3eb6ee92
+    sni: idn.evouch77.me
+    alterId: 0
+    cipher: auto
+    tls: 1
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: /v2ray
+      headers:
+        Host: idn.evouch77.me
+  - name: zul Flex3
+    server: static.line-scdn.net
+    port: 80
+    type: vmess
+    uuid: 0328c140-93f5-45aa-fc29-b863aa4a7e4a
+    sni: d1308qnj72qva0.cloudfront.net
+    alterId: 0
+    cipher: auto
+    tls: 0
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: /vmws?ed=2048
+      headers:
+        Host: d1308qnj72qva0.cloudfront.net
+  - name: TLS zul Flex3
+    server: img-c.udemycdn.com
+    port: 443
+    type: vmess
+    uuid: 0328c140-93f5-45aa-fc29-b863aa4a7e4a
+    sni: d1308qnj72qva0.cloudfront.net
+    alterId: 0
+    cipher: auto
+    tls: 1
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: /vmws?ed=2048
+      headers:
+        Host: d1308qnj72qva0.cloudfront.net
+proxy-groups:
+  - name: Rule
+    type: select
+    proxies:
+      - zul Flex1
+      - TLS zul Flex1
+      - zul Flex2
+      - TLS zul Flex2
+      - zul Flex3
+      - TLS zul Flex3
+rules:
+ - MATCH,Rule
