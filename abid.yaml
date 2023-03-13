@@ -1,4 +1,3 @@
-
 port: 7890
 socks-port: 7891
 redir-port: 7892
@@ -37,10 +36,10 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: abid Grab, server: 162.159.138.6, port: 80, type: vmess, uuid: 5989251b-a5a5-42f8-bae4-d3496508a2de, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
-  - {name: TLS abid Grab, server: 162.159.138.6, port: 443, type: vmess, uuid: 5989251b-a5a5-42f8-bae4-d3496508a2de, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
-  - {name: abid Line, server: sogood.linefriends.com, port: 80, type: vmess, uuid: 5989251b-a5a5-42f8-bae4-d3496508a2de, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
-  - {name: TLS abid Line, server: sogood.linefriends.com, port: 443, type: vmess, uuid: 5989251b-a5a5-42f8-bae4-d3496508a2de, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
+  - {name: abid Grab, server: 162.159.138.6, port: 80, type: vmess, uuid: 37b1e354-3f7a-4c2a-9344-b6b26a398208, sni: sgdo2.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: sgdo2.rajs-vpn.xyz}}}
+  - {name: TLS abid Grab, server: 162.159.138.6, port: 443, type: vmess, uuid: 37b1e354-3f7a-4c2a-9344-b6b26a398208, sni: sgdo2.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: sgdo2.rajs-vpn.xyz}}}
+  - {name: abid Line, server: sogood.linefriends.com, port: 80, type: vmess, uuid: 37b1e354-3f7a-4c2a-9344-b6b26a398208, sni: sgdo2.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: sgdo2.rajs-vpn.xyz}}}
+  - {name: TLS abid Line, server: sogood.linefriends.com, port: 443, type: vmess, uuid: 37b1e354-3f7a-4c2a-9344-b6b26a398208, sni: sgdo2.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: sgdo2.rajs-vpn.xyz}}}
 proxy-groups:
   - name: Rule
     type: select
