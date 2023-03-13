@@ -36,21 +36,17 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: jack Flex1, server: 162.159.138.6, port: 80, type: vmess, uuid: 5989251b-a5a5-42f8-bae4-d3496508a2de, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
-  - {name: TLS jack Flex1, server: 162.159.138.6, port: 443, type: vmess, uuid: 5989251b-a5a5-42f8-bae4-d3496508a2de, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
-  - {name: jack Flex2, server: sogood.linefriends.com, port: 80, type: vmess, uuid: 5989251b-a5a5-42f8-bae4-d3496508a2de, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
-  - {name: TLS jack Flex2, server: sogood.linefriends.com, port: 443, type: vmess, uuid: 5989251b-a5a5-42f8-bae4-d3496508a2de, sni: id-herza1.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id-herza1.rajs-vpn.xyz}}}
-  - {name: jack Flex3, server: static.line-scdn.net, port: 80, type: vmess, uuid: 0328c140-93f5-45aa-fc29-b863aa4a7e4a, sni: d1308qnj72qva0.cloudfront.net, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmws?ed=2048, headers: {Host: d1308qnj72qva0.cloudfront.net}}}
-  - {name: TLS jack Flex3, server: static.line-scdn.net, port: 443, type: vmess, uuid: 0328c140-93f5-45aa-fc29-b863aa4a7e4a, sni: d1308qnj72qva0.cloudfront.net, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmws?ed=2048, headers: {Host: d1308qnj72qva0.cloudfront.net}}}
+  - {name: rohman Grab, server: 162.159.138.6, port: 80, type: vmess, uuid: 37b1e354-3f7a-4c2a-9344-b6b26a398208, sni: sgdo2.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: sgdo2.rajs-vpn.xyz}}}
+  - {name: TLS rohman Grab, server: 162.159.138.6, port: 443, type: vmess, uuid: 37b1e354-3f7a-4c2a-9344-b6b26a398208, sni: sgdo2.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: sgdo2.rajs-vpn.xyz}}}
+  - {name: rohman Line, server: sogood.linefriends.com, port: 80, type: vmess, uuid: 37b1e354-3f7a-4c2a-9344-b6b26a398208, sni: sgdo2.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: sgdo2.rajs-vpn.xyz}}}
+  - {name: TLS rohman Line, server: sogood.linefriends.com, port: 443, type: vmess, uuid: 37b1e354-3f7a-4c2a-9344-b6b26a398208, sni: sgdo2.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: sgdo2.rajs-vpn.xyz}}}
 proxy-groups:
   - name: Rule
     type: select
     proxies:
-      - jack Flex1
-      - TLS jack Flex1
-      - jack Flex2
-      - TLS jack Flex2
-      - jack Flex3
-      - TLS jack Flex3
+      - rohman Grab
+      - TLS rohman Grab
+      - rohman Line
+      - TLS rohman Line
 rules:
  - MATCH,Rule
