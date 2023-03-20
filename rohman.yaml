@@ -36,17 +36,13 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: rohman Grab, server: 162.159.138.6, port: 80, type: vmess, uuid: 37b1e354-3f7a-4c2a-9344-b6b26a398208, sni: sgdo2.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: sgdo2.rajs-vpn.xyz}}}
-  - {name: TLS rohman Grab, server: 162.159.138.6, port: 443, type: vmess, uuid: 37b1e354-3f7a-4c2a-9344-b6b26a398208, sni: sgdo2.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: sgdo2.rajs-vpn.xyz}}}
-  - {name: rohman Line, server: sogood.linefriends.com, port: 80, type: vmess, uuid: 37b1e354-3f7a-4c2a-9344-b6b26a398208, sni: sgdo2.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: sgdo2.rajs-vpn.xyz}}}
-  - {name: TLS rohman Line, server: sogood.linefriends.com, port: 443, type: vmess, uuid: 37b1e354-3f7a-4c2a-9344-b6b26a398208, sni: sgdo2.rajs-vpn.xyz, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: sgdo2.rajs-vpn.xyz}}}
+  - {name: rohman Akrab, server: 104.17.3.81, port: 2096, type: trojan, password: abid, udp: true, skip-cert-verify: true, network: ws, ws-opts: {path: /trojango, headers: {Host: id.evouch.tech}}}
+  - {name: rohman RG, server: 104.18.3.2, port: 2096, type: trojan, password: abid, udp: true, skip-cert-verify: true, network: ws, ws-opts: {path: /trojango, headers: {Host: id.evouch.tech}}}
 proxy-groups:
   - name: Rule
     type: select
     proxies:
-      - rohman Grab
-      - TLS rohman Grab
-      - rohman Line
-      - TLS rohman Line
+      - rohman Akrab
+      - rohman RG
 rules:
  - MATCH,Rule
