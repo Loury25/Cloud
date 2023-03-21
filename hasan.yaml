@@ -44,6 +44,6 @@ proxy-groups:
     type: select
     proxies:
       - hasan Akrab
-      - hasanRG
+      - hasan RG
 rules:
  - MATCH,Rule
